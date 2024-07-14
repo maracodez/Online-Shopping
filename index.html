@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Online Store</h1>
+    <div id="cart">
+      <a href="#" id="cartLink" target="_parent" onclick="showCart()">
+        Cart
+      </a>
+    </div>
+  </div>
+  <div id="main">
+    <div class="box">
+      <img src="image/images.jpeg">
+      <h2>Product 1</h2>
+      <p>&dollar;10</p>
+      <button onclick="
+        addToCart('image/images.jpeg', 'Product 1', 10)
+      ">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/images2.jpeg">
+      <h2>Product 2</h2>
+      <p>&dollar;20</p>
+      <button onclick="
+        addToCart('image/images2.jpeg', 'Product 2', 20)
+      ">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/phone.jpeg">
+      <h2>Product 3</h2>
+      <p>&dollar;30</p>
+      <button onclick="
+        addToCart('image/phone.jpeg', 'Product 3', 30)
+      ">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/smile.jpeg">
+      <h2>Product 4</h2>
+      <p>&dollar;40</p>
+      <button onclick="
+        addToCart('image/smile.jpeg', 'Product 4', 40)
+     ">Add to Cart</button>
+    </div>
+  </div>
+
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <div class="header">
+        <span class="close" onclick="closeCart()">&times;</span>
+        <h3>Cart</h3>
+        <p><a href="#" onclick="continueShopping()">Continue Shopping</a></p>
+      </div>
+      <div class="box">
+        <div id="cartItems"></div>
+        <p>Total: $ <span id="cartTotal">0</span></p>
+      </div>
+      <button onclick="
+        showCheckout()
+      ">Checkout</button>
+    </div>
+  </div>
+
+  <div id="checkoutPage" class="modal">
+    <div class="modal-content">
+      <div class="header">
+        <span class="close" onclick="closeCheckout()">&times;</span>
+        <h3>Checkout</h3>
+       <p><a href="#main">Continue Shopping</a></p>
+      </div>
+      <form id="checkoutForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div id="checkoutItems"></div>
+        <p>Total: $ <span id="checkoutTotal">0.00</span></p>
+        <button type="submit" onclick="placeOrder()"`      >Place Order</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

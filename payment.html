@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <span class="close" onclick="closePayment()">&times;</span>
+        <h3>Payment</h3>
+       <p><a href="index.html">Continue Shopping</a></p>
+    </div>
+    <form id="payment-form">
+        <label for="card-number">Card Number:</label>
+        <input type="number" name="card-number" id="card-number" required><br><br>
+
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="number" id="expiry-date" name="expiry-date" placeholder="MM/YY"><br><br>
+
+        <label for="cvv">CVV:</label>
+        <input type="number" id="cvv" name="cvv" required><br><br>
+
+        <button type="button" id="pay-now">Pay Now</button>
+    </form>
+
+    <footer>
+        <h6>@Fragrance Gallary</h6>
+        <p>A perfume store where you get the best😘💓</p>
+        <div class="icons">
+          <img src="./image/icon-facebook.svg" alt="icon-facebook" onClick="handleIconClick('https://www.facebook.com/')">
+          <img src="./image/icon-instagram.svg" alt="icon-instagram" onClick="handleIconClick('https://www.Instagram.com/ma5634ra')">
+          <img src="./image/icon-twitter.svg" alt="icon-twitter" onClick="handleIconClick('https://www.Twitter.com/AmarachiRu61725')">
+          <img src="./image/icon-youtube.svg" alt="icon-youtube" onClick="handleIconClick('https://www.youtube.com/')">
+          <img src="./image/linkedin.svg" alt="linkedin" onClick="handleIconClick('https://www.linkedin.com/in/mara-ruthy-2b6a5032b')">
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

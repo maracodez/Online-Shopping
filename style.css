@@ -4,8 +4,9 @@ body {
   background-color: #f0f0f0;
 }
 
-.header {
-  background-color: rgb(60, 59, 59);
+.header,
+footer {
+  background-color: rgb(73, 6, 73);
   text-align: center;
   padding: 20px;
   color: white;
@@ -23,7 +24,7 @@ body {
 
 #main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   justify-content: center;
   align-items: center;
@@ -32,14 +33,15 @@ body {
 }
 
 .box {
-  background-color: white;
+  background-color: rgb(78, 3, 66);
+  color: #ccc;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0, 0.5);
   margin-top: 10px;
 }
 
@@ -49,7 +51,9 @@ body {
 }
 
 .box button,
-.modal button {
+.modal button,
+.remove-from-cart,
+#pay-now {
   background-color: black;
   color: white;
   border: none;
@@ -59,7 +63,6 @@ body {
 }
 
 .modal {
-  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -72,10 +75,8 @@ body {
 
 .modal-content {
   background-color: #f0f0f0;;
-  margin: 5% auto;
+  margin: 0% auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
 }
 
 .close {
@@ -101,6 +102,29 @@ form input {
   margin-top: 5px;
 }
 
+#payment-form {
+  margin-block: 8%;
+  margin-inline-start: 10px;
+  margin-bottom: 10%;
+}
+
+h6 {
+  font-size: 2rem;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
+
+.icons img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  width: 30px;
+}
+
 
 @media screen and (max-width: 600px) {
   #main {
@@ -110,5 +134,9 @@ form input {
     justify-content: center;
     align-items: center;
     margin: 20px;
+  }
+
+  #payment-form {
+    margin-bottom: 9%;
   }
 }

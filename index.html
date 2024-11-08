@@ -4,90 +4,233 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Online Store</title>
+  <link rel="shortcut icon" href="./image/copy.jpeg" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="header">
-    <h1>Online Store</h1>
+    <h1>Fragrance Gallary</h1>
     <div id="cart">
       <a href="#" id="cartLink" target="_parent" onclick="showCart()">
-        Cart
+        View Cart
       </a>
     </div>
   </div>
   <div id="main">
     <div class="box">
-      <img src="image/images.jpeg">
-      <h2>Product 1</h2>
+      <img src="./image/product (10).jpg">
+      <h2>Combo</h2>
+      <p>&dollar;13</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="1"
+      data-product-name="Combo"
+      data-product-image="./image/product (10).jpg"
+      data-product-price="13"
+      >Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (11).jpg">
+      <h2>Sexy Scandle</h2>
+      <p>&dollar;5</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="2"
+      data-product-name="Sexy Scandle"
+      data-product-image="./image/product (11).jpg"
+      data-product-price="5">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (12).jpg">
+      <h2>Flaunt</h2>
+      <p>&dollar;7</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="3"
+      data-product-name="Flaunt"
+      data-product-image="./image/product (12).jpg"
+      data-product-price="7">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (13).jpg">
+      <h2>Gemina</h2>
+      <p>&dollar;8</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="4"
+      data-product-name="Gemina"
+      data-product-image="./image/product (13).jpg"
+      data-product-price="8">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (13k).jpg">
+      <h2>Oud Vanilla Combo</h2>
+      <p>&dollar;13</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="5"
+      data-product-name="Oud Vanilla Combo"
+      data-product-image="./image/product (13k).jpg"
+      data-product-price="13">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (14).jpg">
+      <h2>Vercaga</h2>
+      <p>&dollar;8</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="6"
+      data-product-name="Vercaga"
+      data-product-image="./image/product (14).jpg"
+      data-product-price="8">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (14k).jpg">
+      <h2>Berry's Weekend Combo</h2>
+      <p>&dollar;14</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="7"
+      data-product-name="Berrys Weekend Combo"
+      data-product-image="./image/product (14k).jpg"
+      data-product-price="14">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (15).jpg">
+      <h2>Yara Combo</h2>
+      <p>&dollar;15</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="8"
+      data-product-name="Yara Combo"
+      data-product-image="./image/product (15).jpg"
+      data-product-price="15">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (16).jpg">
+      <h2>Combo</h2>
+      <p>&dollar;15</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="9"
+      data-product-name="Combo"
+      data-product-image="./image/product (16).jpg"
+      data-product-price="15">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (17).jpg">
+      <h2>24k Combo</h2>
+      <p>&dollar;6</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="10"
+      data-product-name="24k Combo"
+      data-product-image="./image/product (17).jpg"
+      data-product-price="6">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (18).jpg">
+      <h2>Combo</h2>
       <p>&dollar;10</p>
-      <button onclick="
-        addToCart('image/images.jpeg', 'Product 1', 10)
-      ">Add to Cart</button>
+      <button 
+      class="add-to-cart"
+      data-product-id="11"
+      data-product-name="Combo"
+      data-product-image="./image/product (18).jpg"
+      data-product-price="10">Add to Cart</button>
     </div>
     <div class="box">
-      <img src="image/images2.jpeg">
-      <h2>Product 2</h2>
+      <img src="image/product (3).jpg">
+      <h2>Mousuf Gift Set</h2>
       <p>&dollar;20</p>
-      <button onclick="
-        addToCart('image/images2.jpeg', 'Product 2', 20)
-      ">Add to Cart</button>
+      <button 
+      class="add-to-cart"
+      data-product-id="12"
+      data-product-name="Mousuf Gift Set"
+      data-product-image="./image/product (3).jpg"
+      data-product-price="20">Add to Cart</button>
     </div>
     <div class="box">
-      <img src="image/phone.jpeg">
-      <h2>Product 3</h2>
-      <p>&dollar;30</p>
-      <button onclick="
-        addToCart('image/phone.jpeg', 'Product 3', 30)
-      ">Add to Cart</button>
+      <img src="image/product (4).jpg">
+      <h2>Oud Mood</h2>
+      <p>&dollar;7</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="13"
+      data-product-name="Oud Mood"
+      data-product-image="./image/product (4).jpg"
+      data-product-price="7">Add to Cart</button>
     </div>
     <div class="box">
-      <img src="image/smile.jpeg">
-      <h2>Product 4</h2>
-      <p>&dollar;40</p>
-      <button onclick="
-        addToCart('image/smile.jpeg', 'Product 4', 40)
-     ">Add to Cart</button>
+      <img src="image/product (5).jpg">
+      <h2>Mousuf Spray & Perfume</h2>
+      <p>&dollar;10</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="14"
+      data-product-name="Mousuf Spray & Perfume"
+      data-product-image="./image/product (5).jpg"
+      data-product-price="10">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (6).jpg">
+      <h2>Candy Storm</h2>
+      <p>&dollar;6</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="15"
+      data-product-name="Candy Storm"
+      data-product-image="./image/product (6).jpg"
+      data-product-price="6">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (7).jpg">
+      <h2>Combo</h2>
+      <p>&dollar;15</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="16"
+      data-product-name="Combo"
+      data-product-image="./image/product (7).jpg"
+      data-product-price="15">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (8).jpg">
+      <h2>Genie Combo</h2>
+      <p>&dollar;15</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="17"
+      data-product-name="Genie Combo"
+      data-product-image="./image/product (8).jpg"
+      data-product-price="15">Add to Cart</button>
+    </div>
+    <div class="box">
+      <img src="image/product (9).jpg">
+      <h2>Coconut Passion Combo</h2>
+      <p>&dollar;17</p>
+      <button 
+      class="add-to-cart"
+      data-product-id="18"
+      data-product-name="Coconut Passion Combo"
+      data-product-image="./image/product (9).jpg"
+      data-product-price="17">Add to Cart</button>
     </div>
   </div>
 
-  <div id="cartModal" class="modal">
-    <div class="modal-content">
-      <div class="header">
-        <span class="close" onclick="closeCart()">&times;</span>
-        <h3>Cart</h3>
-        <p><a href="#" onclick="continueShopping()">Continue Shopping</a></p>
-      </div>
-      <div class="box">
-        <div id="cartItems"></div>
-        <p>Total: $ <span id="cartTotal">0</span></p>
-      </div>
-      <button onclick="
-        showCheckout()
-      ">Checkout</button>
+  <footer>
+    <h6>@Fragrance Gallary</h6>
+    <p>A perfume store where you get the best😘💓</p>
+    <div class="icons">
+      <img src="./image/icon-facebook.svg" alt="icon-facebook" onClick="handleIconClick('https://www.facebook.com/')">
+      <img src="./image/icon-instagram.svg" alt="icon-instagram" onClick="handleIconClick('https://www.Instagram.com/ma5634ra')">
+      <img src="./image/icon-twitter.svg" alt="icon-twitter" onClick="handleIconClick('https://www.Twitter.com/AmarachiRu61725')">
+      <img src="./image/icon-youtube.svg" alt="icon-youtube" onClick="handleIconClick('https://www.youtube.com/')">
+      <img src="./image/linkedin.svg" alt="linkedin" onClick="handleIconClick('https://www.linkedin.com/in/mara-ruthy-2b6a5032b')">
     </div>
-  </div>
-
-  <div id="checkoutPage" class="modal">
-    <div class="modal-content">
-      <div class="header">
-        <span class="close" onclick="closeCheckout()">&times;</span>
-        <h3>Checkout</h3>
-       <p><a href="#main">Continue Shopping</a></p>
-      </div>
-      <form id="checkoutForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <div id="checkoutItems"></div>
-        <p>Total: $ <span id="checkoutTotal">0.00</span></p>
-        <button type="submit" onclick="placeOrder()"`      >Place Order</button>
-      </form>
-    </div>
-  </div>
-
+  </footer>
+  
+  
   <script src="script.js"></script>
 </body>
 </html>
